@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentDangKy">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cần điền tất cả các mục"
+      android:layout_marginTop="@dimen/_8sdp"
+      android:layout_marginLeft="@dimen/_8sdp"
+      android:layout_marginRight="@dimen/_8sdp"
+      android:textSize="@dimen/_15sdp"
+      android:textColor="@color/black"
+      android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/input_edHoTenDK">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edHoTenDK"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên đầy đủ"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/input_edDiaChiEmailDK">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edDiaChiEmailDK"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ Email"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/input_edMatKhauDK">
+    <EditText
+        android:inputType="text"
+        android:id="@+id/edMatKhauDK"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Mật khẩu phải gồm 6 ký tự và một chữ hoa"
+        android:layout_margin="@dimen/_8sdp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/input_edNhapLaiMatKhauDK">
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edNhapLaiMatKhauDK"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/btnDangKy"
+        android:background="@color/Orange"/>
+</LinearLayout>
