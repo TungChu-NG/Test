@@ -38,15 +38,14 @@ public class ModelDangKy {
         HashMap<String,String> hsMaLoaiNV = new HashMap<>();
         hsMaLoaiNV.put("maloainv",String.valueOf(nhanVien.getMaLoaiNV()));
 
-//        HashMap<String,String> hsEmailDocqQuyen = new HashMap<>();
-//        hsEmailDocqQuyen.put("emaildocquyen",nhanVien.getEmailDocQuyen());
+
 
         attrs.add(hsHam);
         attrs.add(hsTenNV);
         attrs.add(hsTenDN);
         attrs.add(hsMatKhau);
         attrs.add(hsMaLoaiNV);
-        //attrs.add(hsEmailDocqQuyen);
+
 
         DownloadJSON downloadJSON = new DownloadJSON(duongdan,attrs);
         downloadJSON.execute();

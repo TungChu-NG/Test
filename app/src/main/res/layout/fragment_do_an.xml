@@ -8,13 +8,153 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerDoAn"
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDoAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+<!--            <ImageView-->
+<!--                android:src="@drawable/imgquangcao"-->
+<!--                android:id="@+id/imKhuyenMaiDoAn"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_80sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <FrameLayout-->
+<!--                        android:layout_marginRight="@dimen/_4sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <ImageView-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/img11"-->
+<!--                            android:layout_weight="1"-->
+
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="@dimen/_140sdp"/>-->
+<!--                        <TextView-->
+<!--                            android:padding="@dimen/_25sdp"-->
+<!--                            android:background="#B2000000"-->
+<!--                            android:text="Tha hồ mua sắm"-->
+<!--                            android:textSize="@dimen/_15sdp"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"/>-->
+<!--                    </FrameLayout>-->
+<!--                    <FrameLayout-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginLeft="@dimen/_4sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <ImageView-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/img12"-->
+<!--                            android:layout_width="match_parent"-->
+
+<!--                            android:layout_height="@dimen/_140sdp"/>-->
+<!--                        <TextView-->
+<!--                            android:padding="@dimen/_25sdp"-->
+<!--                            android:background="#B2000000"-->
+<!--                            android:text="Ăn uống thả ga"-->
+<!--                            android:textSize="@dimen/_15sdp"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"/>-->
+<!--                    </FrameLayout>-->
 
 
-        </androidx.recyclerview.widget.RecyclerView>
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <FrameLayout-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginRight="@dimen/_4sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <ImageView-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/img13"-->
+
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="@dimen/_140sdp"/>-->
+<!--                        <TextView-->
+<!--                            android:padding="@dimen/_25sdp"-->
+<!--                            android:background="#B2000000"-->
+<!--                            android:text="Thế giới đồ ăn"-->
+<!--                            android:textSize="@dimen/_15sdp"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"/>-->
+
+<!--                    </FrameLayout>-->
+
+<!--                  <FrameLayout-->
+<!--                      android:layout_weight="1"-->
+<!--                      android:layout_marginLeft="@dimen/_4sdp"-->
+<!--                      android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                      android:layout_width="match_parent"-->
+<!--                      android:layout_height="match_parent">-->
+<!--                      <ImageView-->
+<!--                          android:scaleType="centerCrop"-->
+<!--                          android:src="@drawable/img14"-->
+<!--                          android:layout_width="match_parent"-->
+
+<!--                          android:layout_height="@dimen/_140sdp"/>-->
+
+<!--                      <TextView-->
+<!--                          android:padding="@dimen/_25sdp"-->
+<!--                          android:background="#B2000000"-->
+<!--                          android:text="Vô vàn sự lựa chọn"-->
+<!--                          android:textSize="@dimen/_15sdp"-->
+<!--                          android:textAlignment="center"-->
+<!--                          android:gravity="center"-->
+<!--                          android:layout_width="match_parent"-->
+<!--                          android:layout_height="match_parent"/>-->
+<!--                  </FrameLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <TextView-->
+<!--                android:layout_margin="@dimen/_8sdp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Top các thương hiệu lớn"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_16sdp"/>-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rcvTopCacThuongHieuLon"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+        </LinearLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 

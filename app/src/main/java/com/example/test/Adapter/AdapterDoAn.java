@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -42,8 +43,10 @@ public class AdapterDoAn extends RecyclerView.Adapter<AdapterDoAn.ViewHolderDoAn
     public void onBindViewHolder(@NonNull ViewHolderDoAn holder, int position) {
         DoAn doAn = doAnList.get(position);
 
+        holder.txtTieuDeSanPhamNoiBat.setText(doAn.getTennoibat());
+        holder.txtTopSanPhamNoiBat.setText(doAn.getTentopnoibat());
         //Xử lý hiển thị danh sách thương hiệu lớn ở recycler view Thương hiệu lớn
-        AdapterThuongHieuLon adapterThuongHieuLon = new AdapterThuongHieuLon(context,doAn.getThuongHieus());
+        AdapterThuongHieuLon adapterThuongHieuLon = new AdapterThuongHieuLon(context,doAn.getThuongHieus(),doAn.isThuonghieu());
 
         RecyclerView.LayoutManager  layoutManager = new GridLayoutManager(context,3,RecyclerView.HORIZONTAL,false);
 
@@ -54,7 +57,7 @@ public class AdapterDoAn extends RecyclerView.Adapter<AdapterDoAn.ViewHolderDoAn
 
         //Xử lý hiển thị danh sách thương hiệu lớn ở recycler view Top món ăn việt
 
-        AdapterTopMonVietDoAn adapterTopMonVietDoAn = new AdapterTopMonVietDoAn(context,doAn.getSanPhams());
+        AdapterTopMonVietDoAn adapterTopMonVietDoAn = new AdapterTopMonVietDoAn(context,R.layout.custom_layout_topmonviet,doAn.getSanPhams());
 
         RecyclerView.LayoutManager layoutManager1 = new LinearLayoutManager(context,RecyclerView.HORIZONTAL,false);
 
@@ -73,6 +76,7 @@ public class AdapterDoAn extends RecyclerView.Adapter<AdapterDoAn.ViewHolderDoAn
         ImageView imgKhuyenMaiDoAn;
         RecyclerView recyclerViewThuongHieuLon;
         RecyclerView recyclerViewTopSanPham;
+        TextView txtTieuDeSanPhamNoiBat,txtTopSanPhamNoiBat;
 
         public ViewHolderDoAn(@NonNull View itemView) {
             super(itemView);
@@ -80,6 +84,8 @@ public class AdapterDoAn extends RecyclerView.Adapter<AdapterDoAn.ViewHolderDoAn
             imgKhuyenMaiDoAn = itemView.findViewById(R.id.imKhuyenMaiDoAn);
             recyclerViewThuongHieuLon = itemView.findViewById(R.id.recyclerThuongHieuLon);
 
+            txtTopSanPhamNoiBat = itemView.findViewById(R.id.txtTenSanNoiBat);
+            txtTieuDeSanPhamNoiBat = itemView.findViewById(R.id.txtTenTopSanNoiBat);
         }
     }
 }

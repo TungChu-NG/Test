@@ -31,7 +31,8 @@ public class PresenterLogicXuLyMenu implements IPresenterXuLyMenu{
         //DownloadJSON downloadJSON = new DownloadJSON(duongdan);
 
         //POST
-        String duongdan = "http://192.168.0.108:7882/webapp/loaisanpham.php";
+        //String duongdan = "http://192.168.0.108:7882/webapp/loaisanpham.php";
+        String duongdan = MainActivity.SERVER_NAME;
 
         HashMap<String,String>hsHam = new HashMap<>();
         hsHam.put("ham","LayDanhSachMenu");

@@ -36,7 +36,8 @@ public class ModelDangNhap {
     public  boolean KiemTraDangNhap(Context context,String tendangnhap, String matkhau){
 
         boolean kiemtra = false;
-        String duongdan = "http://192.168.0.108:7882/webapp/loaisanpham.php";
+        String duongdan = MainActivity.SERVER_NAME;
+       // String duongdan = "http://192.168.108.108:7882/webapp/loaisanpham.php";
 
         List<HashMap<String,String>> attrs = new ArrayList<>();
         HashMap<String,String> hsHam = new HashMap<>();

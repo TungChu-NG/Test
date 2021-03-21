@@ -1,8 +1,54 @@
 package com.example.test.Model.ObjectClass;
 
+import java.util.List;
+
 public class SanPham {
     int MASP,GIA,SOLUONG,MALOAISP,MATHUONGHIEU,MANV,LUOTMUA;
-    String ANHLON,ANHNHO,THONGTIN,TENSP;
+    String ANHLON,ANHNHO,THONGTIN,TENSP,TENNV;
+    List<ChiTietSanPham> chiTietSanPhamList;
+    byte[] hinhgiohang;
+    int SOLUONGTONKHO;
+    ChiTietKhuyenMai chiTietKhuyenMai;
+
+    public ChiTietKhuyenMai getChiTietKhuyenMai() {
+        return chiTietKhuyenMai;
+    }
+
+    public void setChiTietKhuyenMai(ChiTietKhuyenMai chiTietKhuyenMai) {
+        this.chiTietKhuyenMai = chiTietKhuyenMai;
+    }
+
+    public int getSOLUONGTONKHO() {
+        return SOLUONGTONKHO;
+    }
+
+    public void setSOLUONGTONKHO(int SOLUONGTONKHO) {
+        this.SOLUONGTONKHO = SOLUONGTONKHO;
+    }
+
+    public byte[] getHinhgiohang() {
+        return hinhgiohang;
+    }
+
+    public void setHinhgiohang(byte[] hinhgiohang) {
+        this.hinhgiohang = hinhgiohang;
+    }
+
+    public String getTENNV() {
+        return TENNV;
+    }
+
+    public void setTENNV(String TENNV) {
+        this.TENNV = TENNV;
+    }
+
+    public List<ChiTietSanPham> getChiTietSanPhamList() {
+        return chiTietSanPhamList;
+    }
+
+    public void setChiTietSanPhamList(List<ChiTietSanPham> chiTietSanPhamList) {
+        this.chiTietSanPhamList = chiTietSanPhamList;
+    }
 
     public String getTENSP() {
         return TENSP;
@@ -91,4 +137,6 @@ public class SanPham {
     public void setTHONGTIN(String THONGTIN) {
         this.THONGTIN = THONGTIN;
     }
+
+
 }

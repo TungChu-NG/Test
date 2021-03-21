@@ -10,4 +10,5 @@
     <color name="bgToolbar">#183545</color>
     <color name="Gray">#CCC</color>
     <color name="Orange">#FF9800</color>
+    <color name="colorSliderInActivie">#65737A</color>
 </resources>

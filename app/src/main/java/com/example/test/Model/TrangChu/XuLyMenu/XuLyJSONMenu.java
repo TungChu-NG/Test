@@ -48,7 +48,9 @@ public class XuLyJSONMenu {
         List<HashMap<String,String>> attrs = new ArrayList<>();
         String dataJSON="";
 
-        String duongdan = "http://192.168.0.108:7882/webapp/loaisanpham.php";
+        //String duongdan = "http://192.168.42.44:7882/webapp/loaisanpham.php";
+        //String duongdan = "http://192.168.108.108:7882/webapp/loaisanpham.php";
+        String duongdan = MainActivity.SERVER_NAME;
 
         HashMap<String,String> hsHam = new HashMap<>();
         hsHam.put("ham","LayDanhSachMenu");

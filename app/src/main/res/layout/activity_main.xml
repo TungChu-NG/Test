@@ -6,68 +6,185 @@
     android:id="@+id/drawerLayout"
     android:layout_height="match_parent"
     android:layout_width="match_parent" >
+<!--    <FrameLayout-->
+<!--        android:id="@+id/content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            tools:context=".MainActivity">-->
+
+<!--            <com.google.android.material.appbar.AppBarLayout-->
+<!--                android:id="@+id/appbar"-->
+<!--               android:backgroundTint="@color/bgToolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--                    android:id="@+id/collapsing_toolbar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"-->
+<!--                    >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+
+<!--                        <androidx.appcompat.widget.Toolbar-->
+<!--                            android:id="@+id/toolbar"-->
+<!--                            android:theme="@style/menuitemcolor"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="?attr/actionBarSize"/>-->
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/lnSearch"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_margin="@dimen/_3sdp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            android:backgroundTint="#183545"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="horizontal">&ndash;&gt;-->
+<!--&lt;!&ndash;                        &ndash;&gt;-->
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--                </LinearLayout>-->
+<!--                    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+
+<!--                    <com.google.android.material.tabs.TabLayout-->
+<!--                        android:id="@+id/tabs"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:tabMode="scrollable"-->
+<!--                        app:tabTextAppearance="@style/capfalse"-->
+<!--                        app:tabTextColor="#FFFFFF">-->
+
+<!--                    </com.google.android.material.tabs.TabLayout>-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+
+<!--            </com.google.android.material.appbar.AppBarLayout>-->
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/viewPager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--            </androidx.viewpager.widget.ViewPager>-->
+<!--        </LinearLayout>-->
+<!--    </FrameLayout>-->
+
     <FrameLayout
-        android:id="@+id/content"
+        android:id="@+id/themFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
+            android:fitsSystemWindows="true"
+            >
 
             <com.google.android.material.appbar.AppBarLayout
-               android:backgroundTint="@color/bgToolbar"
+                android:id="@+id/appbar"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
+                android:background="@color/bgToolbar"
+                android:fitsSystemWindows="true"
+                >
+
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                    >
+
                     <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
-                        android:theme="@style/menuitemcolor"
+                        android:layout_height="?attr/actionBarSize"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"/>
+
+                        app:theme="@style/menuitemcolor"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:layout_collapseMode="pin"
+
+                        />
+
                     <LinearLayout
+                        android:id="@+id/lnSearch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/_3sdp"
-
-                        android:backgroundTint="#183545"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:background="@color/bgToolbar"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap"
+                        app:layout_collapseMode="parallax"
+                        >
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableLeft="@drawable/ic_search"
                             android:text="Tìm kiếm"
-                            android:textColor="@color/black"
+                            android:layout_gravity="start"
                             android:textAlignment="viewStart"
                             android:textAllCaps="false"
                             android:layout_weight="1"
+                            android:textColor="@color/Gray"
+                            android:paddingLeft="10dp"
                             />
+<!--                        <View-->
+<!--                            android:layout_width="1dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginBottom="10dp"-->
+<!--                            android:background="@color/bgToolbar"-->
+<!--                            />-->
+<!--                        <ImageButton-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:src="@drawable/"-->
+<!--                            android:background="@drawable/selectorbgsearch"-->
+<!--                            />-->
+
                     </LinearLayout>
-                    <com.google.android.material.tabs.TabLayout
-                        android:id="@+id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:tabMode="scrollable"
-                        app:tabTextAppearance="@style/capfalse"
-                        app:tabTextColor="#FFFFFF">
 
-                    </com.google.android.material.tabs.TabLayout>
-                </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
 
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"
+                    app:tabTextColor="@color/Gray"
+                    app:tabTextAppearance="@style/capfalse"
+                    />
 
             </com.google.android.material.appbar.AppBarLayout>
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-            </androidx.viewpager.widget.ViewPager>
-        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.viewpager.widget.ViewPager>
+            </FrameLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
     </FrameLayout>
+
    <ExpandableListView
        android:id="@+id/epMenu"
        android:layout_width="match_parent"

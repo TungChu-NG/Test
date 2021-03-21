@@ -31,7 +31,7 @@
         <item name="drawerArrowStyle">@style/changecolorToggledrawable</item>
     </style>
     <style name="changecolorToggledrawable" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="color">@color/white</item>
+        <item name="color">#201F1F</item>
     </style>
 
     <style name="mauCustom" parent="@android:style/TextAppearance.Widget.IconMenu.Item">

@@ -22,19 +22,19 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     public ViewPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
-        listFragment.add(new FragmentNoiBat());
+        //listFragment.add(new FragmentNoiBat());
         listFragment.add(new FragmentChuongTrinhKhuyenMai());
         listFragment.add(new FragmentDoAn());
-        listFragment.add(new FragmentThucPham());
-        listFragment.add(new FragmentTapHoa());
-        listFragment.add(new FragmentThuongHieu());
+        //listFragment.add(new FragmentThucPham());
+        //listFragment.add(new FragmentTapHoa());
+        //listFragment.add(new FragmentThuongHieu());
 
-        tilteFragment.add("Nổi bật");
+       // tilteFragment.add("Nổi bật");
         tilteFragment.add("Chương trình khuyến mãi");
         tilteFragment.add("Đồ ăn");
-        tilteFragment.add("Thực phẩm");
-        tilteFragment.add("Tạp hóa");
-        tilteFragment.add("Thương hiệu");
+       // tilteFragment.add("Thực phẩm");
+       // tilteFragment.add("Tạp hóa");
+       // tilteFragment.add("Thương hiệu");
 
 
 
